@@ -1,0 +1,51 @@
+<div class="container">
+<!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+  
+  <a class="navbar-brand" href="#">
+    <img src="/assets/goku.gif" width="30" height="30" class="d-inline-block align-top" alt="">
+    Score Board Form 
+  </a>
+</nav>
+<h2>Welcome to the fight club!!!!</h2>
+<h3>Here you will find the score of winners</h3>
+<div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Score</th>
+    </tr>
+  </thead>
+  <tbody id="scoreBoard">
+    <tr>
+      <th scope="row">1</th>
+      <td>Lein</td>
+      <td>0000</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Granger</td>
+      <td>0000</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Mayra</td>
+      <td>0000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<form action="" id="post-score-form">
+  <div class="form-group">
+    <label for="fight_score[name]">Name</label>
+    <input type="text" class="form-control" name="fight_score[name]" id="fight_score[name]" placeholder="Player Name"required>
+  </div>
+  <div class="form-group">
+    <label for="fight_score[score]">Score</label>
+    <input type="number" class="form-control" name="fight_score[score]" id="fight_score[score]" placeholder="Fight Score" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
