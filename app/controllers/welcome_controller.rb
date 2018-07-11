@@ -6,7 +6,10 @@ class WelcomeController < ApplicationController
 	def fight_score
 		fh = FightScore.order(score: :desc).limit(10)
 		fh = fh || FightScore.new
-		render json: {fight_score: fh.score, name: hs.name}.to_json
+		scores = fh.map do |s|
+			{fight_score: s.score, name: s.name}
+		end
+		render json: scores.to_json
 	end
 
 	def create_score

@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_10_165058) do
+ActiveRecord::Schema.define(version: 2018_07_11_151747) do
 
-  create_table "figh_scores", force: :cascade do |t|
+  create_table "fight_scores", force: :cascade do |t|
     t.integer "score"
     t.string "name"
     t.datetime "created_at", null: false
